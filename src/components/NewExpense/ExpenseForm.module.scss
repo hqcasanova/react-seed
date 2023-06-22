@@ -1,0 +1,35 @@
+@import 'scss/variables.scss';
+
+.new-expense {
+  &__controls {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: left;
+    border: none;
+  }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .75rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 650px) {
+    &__controls {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: .75rem;
+    }
+
+    &__field--wide {
+      grid-column: 1 / -1;
+    }
+
+    &__actions {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+  

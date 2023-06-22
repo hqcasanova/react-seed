@@ -1,0 +1,32 @@
+@import 'scss/variables.scss';
+
+.field {
+  strong {
+    display: inline-block;
+    margin: 0.1rem;
+  }
+
+  input {
+    padding: 0.5rem;
+    width: 100%;
+    font: inherit;
+    border: 1px solid $light-grey;
+    border-radius: 6px;
+    outline: 0;
+    transition: border-color .3s ease-in;
+
+    &:focus, &:hover {
+      border-color: lighten($primary, 10%);
+    }
+  }
+
+  &--error {
+    strong {
+      color: $error;
+    }
+    
+    input {
+      border-color: $error !important;
+    }
+  }
+}
