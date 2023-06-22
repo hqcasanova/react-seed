@@ -1,8 +1,12 @@
-# Fiddling with React 18
+# React 18 Seed
 
-Ongoing learning exercise for React. Based so far on the first 70 units of Maximilian's popular [Udemy course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/).
+Skeleton React project supporting TypeScript based on create-react-app's output config.
 
-## Run the app
+## Features
 
-In the project directory, you can run `npm start`. It'll open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- TypeScript 
+- Airbnb linting
+- Jest
+- Docs folder output for builds
+
 
